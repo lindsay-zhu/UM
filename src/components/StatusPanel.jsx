@@ -1,1 +1,0 @@
-export default function StatusPanel({ title = 'STATUS', items }) {return <section className="status-panel panel"><h3>{title}</h3><dl>{items.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>;}

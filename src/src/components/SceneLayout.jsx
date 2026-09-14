@@ -1,2 +1,0 @@
-import { motion } from 'framer-motion';
-export default function SceneLayout({ eyebrow, title, children, className = '' }) {return <motion.section initial={{ opacity:0, scale:.985, filter:'blur(4px)' }} animate={{ opacity:1, scale:1, filter:'blur(0px)' }} exit={{ opacity:0, scale:1.01 }} transition={{duration:.3}} className={`scene ${className}`}><header className="scene-heading">{eyebrow && <span className="eyebrow">{eyebrow}</span>}{title && <h1>{title}</h1>}</header>{children}</motion.section>;}
